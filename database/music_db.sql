@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS Collections (
 CREATE TABLE IF NOT EXISTS Songs (
 	song_id SERIAL PRIMARY KEY,
 	name VARCHAR(30) NOT NULL,
-	duration INTERVAL(SECOND AND MINUTE) NOT NULL,
+	duration TIME NOT NULL,
 	album_id INTEGER NOT NULL REFERENCES Albums(album_id)
 );
 
@@ -46,9 +46,8 @@ CREATE TABLE IF NOT EXISTS Singers_Albums (
 	album_id INTEGER NOT NULL REFERENCES Albums(album_id)
 );
 
--- отношение многие ко многим(исполнители, ;fyhs)
+-- отношение многие ко многим(исполнители, жанры)
 CREATE TABLE IF NOT EXISTS Singers_Genres (
 	id SERIAL PRIMARY KEY,
 	singer_id INTEGER NOT NULL REFERENCES Singers(singer_id),
 	genre_id INTEGER NOT NULL REFERENCES Genres(genre_id)
-);
