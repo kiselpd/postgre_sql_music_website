@@ -51,3 +51,4 @@ CREATE TABLE IF NOT EXISTS Singers_Genres (
 	id SERIAL PRIMARY KEY,
 	singer_id INTEGER NOT NULL REFERENCES Singers(singer_id),
 	genre_id INTEGER NOT NULL REFERENCES Genres(genre_id)
+);
