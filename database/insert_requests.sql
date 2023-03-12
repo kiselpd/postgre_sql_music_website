@@ -19,7 +19,7 @@ INSERT INTO albums("name", "release_date")
 	
 -- создание отношений между исполнителями и альбомами
 INSERT INTO singers_albums("singer_id", "album_id")
-	VALUES (1, 9), (2, 1), (2, 2), (3, 3), (3, 4), (4, 5), (5, 6), (8, 7), (6, 8);
+	VALUES (1, 9), (2, 1), (2, 2), (3, 3), (3, 4), (4, 5), (5, 6), (8, 7), (6, 8), (1, 4);
 	
 -- вставка данных в раздел треки
 INSERT INTO songs("name", "duration", "album_id")
