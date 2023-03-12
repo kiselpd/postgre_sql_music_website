@@ -46,7 +46,7 @@ SELECT a.name, AVG(s.duration) FROM albums AS a
 LEFT JOIN songs AS s ON s.album_id = a.album_id
 GROUP BY a.name;
 	
--- Все исполнители, которые не выпустили альбомы в 2020 году(!!!!!!!!!!!!!!!!!!!)
+-- Все исполнители, которые не выпустили альбомы в 2020 году
 SELECT s.name FROM singers AS s
 WHERE s.name NOT IN 
 	(SELECT s2.name FROM singers AS s2
