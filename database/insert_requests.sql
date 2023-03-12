@@ -14,7 +14,7 @@ INSERT INTO singers_genres("singer_id", "genre_id")
 -- вставка данных в раздел альбомы
 INSERT INTO albums("name", "release_date")
 	VALUES ('24k Magic', '2016-11-17'), ('It will rain', '2011-09-27'), ('Views', '2016-04-29'),
-	('Scorpion', '2018-06-29'), ('Highway to Hell', '1979-07-27'), ('My Way', '1969-03-01'),
+	('Scorpion', '2020-06-29'), ('Highway to Hell', '1979-07-27'), ('My Way', '1969-03-01'),
 	('Astroworld', '2018-08-03'), ('It Is What It Is', '2020-04-03'), ('Sweetener', '2018-08-17');
 	
 -- создание отношений между исполнителями и альбомами
@@ -27,7 +27,8 @@ INSERT INTO songs("name", "duration", "album_id")
 	('With you', '00:03:15', 3), ('Talk Up', '00:03:16', 4), ('Controlla', '00:04:05', 3), 
 	('Get It Hot', '00:02:34', 5), ('Touch To Much', '00:04:26', 5), ('Yesterday', '00:03:57', 6), 
 	('SICKO MODE', '00:05:12', 7), ('WAKE UP', '00:03:51', 7), ('Overseas', '00:01:29', 8), 
-	('Fair Chance', '00:03:58', 8), ('successful', '00:03:47', 9), ('R.E.M.', '00:04:05', 9); 
+	('Fair Chance', '00:03:58', 8), ('successful', '00:03:47', 9), ('R.E.M.', '00:04:05', 9), 
+	('Shape of my heart', '00:04:38', 9);
 	
 -- вставка данных в раздел сборники
 INSERT INTO collections("name", "release_date")
